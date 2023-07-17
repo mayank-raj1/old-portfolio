@@ -1,0 +1,112 @@
+body {
+    font-family: 'Source Sans 3';
+    background-color: #F7F3F3;
+}
+h1{
+    font-family: 'Source Code Pro', monospace;
+    size: 3.75rem;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    size: 3rem;
+}
+h3{
+    font-family: 'Source Code Pro', monospace;
+    size: 2.25 rem;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+}
+.button{
+    background-color: #2563EB;
+    padding: 1rem;
+    border-radius: 6px;
+    color: white;
+}
+header{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+header span{
+    padding: 20px;
+}
+main{
+    min-width: 400px;
+    width: 90%;
+    margin: auto;
+}
+.blue-text{
+    color: #2563EB;
+}
+.about-me{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.about-me h1{
+    text-align: center;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+}
+.skill-img{
+    width: 1rem;
+    padding: 3px;
+    display: -ms-inline-grid;
+}
+.skills span{
+    display: flex;
+}
+.projects{
+    width: 90%;
+    min-width: 400px;
+    margin: auto;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 45%;
+    min-width: 350px;
+    border: solid 1px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.lowerSection {
+    display: flex;
+    justify-content: space-between;
+}
+.lowerSection img{
+    width: 25px;
+}
+.technologies span, .about-me span{
+    padding: 1px 5px 1px 5px;
+    border-radius: 3px;
+    margin: 5px;
+    background-color: lightgrey;
+}
+.project-description{
+    margin: 10px;
+}
+.card:hover {
+    background-color: #E3E8ED;
+    border-color: #E3E8ED;
+}
