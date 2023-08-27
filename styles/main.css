@@ -1,6 +1,7 @@
 body {
     font-family: 'Source Sans 3';
     background-color: #F7F3F3;
+    color:#1F2937;
 }
 h1{
     font-family: 'Source Code Pro', monospace;
@@ -22,21 +23,73 @@ a{
 nav{
     display: flex;
 }
-.button{
-    background-color: #2563EB;
-    padding: 1rem;
-    border-radius: 6px;
-    color: white;
-}
+
 header{
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 header span{
     padding: 20px;
 }
+
+.menu{
+  display: none;
+  margin: 20px;
+}
+.mobile-nav{
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+}
+.connect{
+    background-color: #2563EB;
+    padding: 1rem;
+    border-radius: 6px;
+    color: white;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #2563EB;
+    outline: 3px #2563EB solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .connect span {
+    color: white;
+    font-weight: 700;
+    transition: 400ms;
+    padding: 0px;
+  }
+  
+  .connect svg path {
+    transition: 400ms;
+    fill: white;
+  }
+  
+  .connect:hover {
+    background-color: transparent;
+  }
+  
+  .connect:hover span {
+    color: #2563EB;
+  }
+  
+  .connect:hover svg path {
+    fill: #2563EB;
+  }
 main{
     min-width: 400px;
     width: 90%;
@@ -109,4 +162,173 @@ main{
 .card:hover {
     background-color: #E3E8ED;
     border-color: #E3E8ED;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5px 10px;
+    gap: 10px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button2 .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button2 svg path {
+    transition: 400ms;
+  }
+  
+  .button2:hover {
+    background-color: transparent;
+  }
+  
+  .button2:hover .text {
+    color: #181717;
+  }
+  
+  .button2:hover svg path {
+    fill: #181717;
+  }
+
+
+  .connect-card {
+    align-self: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .form {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+  .form .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 93%;
+    background-color: transparent;
+  }
+  
+  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .form .group input:focus,
+  .form .group textarea:focus {
+    border-color: #3366cc;
+  }
+  
+  .form .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form button {
+    background-color: #3366cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #27408b;
+  }
+  
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+
+  border-top: #181717 solid;
+}
+footer h2{
+  font-family: "Source Sans 3";
+  font-weight: bold;
+  padding: 0px;
+}
+.links a{
+  margin: 5px;
+}
+@media screen and (max-width: 500px) {
+  footer{
+    flex-direction: column;
+    gap: 5px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .hidden{
+    display: none;
+  }
+  .menu{
+    display: inline-block;
+  }
+  .mobile-nav{
+    width: 100%;
+  }
 }
